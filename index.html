@@ -7,21 +7,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container navbar">
-      <div class="nav-left">
-        <a href="index.html" class="logo-container">
-          <span>Golf90</span>
-        </a>
-        <ul class="nav-menu">
-          <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
-          <li><a href="blog.html" data-i18n="learn">Golf Swing Learning</a></li>
-          <li><a href="privacy.html" data-i18n="privacy">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <a href="https://apps.apple.com" target="_blank" class="btn-download" data-i18n="download">Download App</a>
+<header>
+  <div class="container navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo-container">
+        <span>Golf90</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
-  </header>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+      <li><a href="blog.html" data-i18n="learn">Golf Swing Learning</a></li>
+      <li><a href="privacy.html" data-i18n="privacy">Privacy Policy</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://apps.apple.com" target="_blank" class="btn-download" data-i18n="download">Download App</a>
+      <a href="https://apps.apple.com" target="_blank" class="btn-download-icon" aria-label="Download App">📱</a>
+    </div>
+  </div>
+</header>
 
   <main>
     <!-- Hero Section -->
@@ -32,7 +36,7 @@
         
         <div class="hero-visuals">
           <div class="phone-mockup">
-            <img src="home.jpg" alt="Golf90 App Main Screen">
+            <img src="home1.jpg" alt="Golf90 App Main Screen">
           </div>
         </div>
       </div>
@@ -47,7 +51,7 @@
           <!-- 功能1：实时拍摄分析 -->
           <div class="feature-card">
             <div class="phone-mockup">
-              <img src="home.jpg" alt="Golf90 App Main Screen">
+              <img src="home2.jpg" alt="Golf90 App Main Screen">
             </div>
             <h3 data-i18n="f1Title">Real-Time Camera Analysis</h3>
             <p data-i18n="f1Desc">Capture your swing and get instant pose-estimation directly on your device without waiting for cloud uploads.</p>
@@ -56,7 +60,7 @@
           <!-- 功能2：双视频对比分析 -->
           <div class="feature-card">
             <div class="phone-mockup">
-              <img src="home.jpg" alt="Golf90 App Main Screen">
+              <img src="home3.jpg" alt="Golf90 App Main Screen">
             </div>
             <h3 data-i18n="f2Title">Dual Video Comparison</h3>
             <p data-i18n="f2Desc">Play two swings side-by-side. Compare your posture with professionals or your past practice sessions.</p>
@@ -65,7 +69,7 @@
           <!-- 功能3：击球自动剪辑 -->
           <div class="feature-card">
             <div class="phone-mockup">
-              <img src="home.jpg" alt="Golf90 App Main Screen">
+              <img src="home4.jpg" alt="Golf90 App Main Screen">
             </div>
             <h3 data-i18n="f3Title">Auto-Clipping of Hits</h3>
             <p data-i18n="f3Desc">AI automatically detects the exact moment of impact and seamlessly clips the highlights of your swing.</p>
