@@ -13,7 +13,8 @@ const translations = {
     f2Desc: "Play two swings side-by-side. Compare your posture with professionals or your past practice sessions.",
     f3Title: "Auto-Clipping of Hits",
     f3Desc: "AI automatically detects the exact moment of impact and seamlessly clips the highlights of your swing.",
-    footerText: "© 2026 Golf90. All rights reserved."
+    footerText: "© 2026 Golf90. All rights reserved.",
+    readMore: "Read Full Article →"
   },
   "zh-TW": {
     home: "首頁",
@@ -29,7 +30,8 @@ const translations = {
     f2Desc: "並排播放兩段揮桿影片，輕鬆將您的動作與職業選手或歷史記錄進行對比。",
     f3Title: "擊球自動剪輯",
     f3Desc: "AI 自動偵測擊球瞬間，為您精準剪輯每一次揮桿的高光時刻。",
-    footerText: "© 2026 Golf90. 保留所有權利。"
+    footerText: "© 2026 Golf90. 保留所有權利。",
+    readMore: "閱讀全文 →"
   },
   ko: {
     home: "홈",
@@ -45,7 +47,8 @@ const translations = {
     f2Desc: "두 개의 스윙을 나란히 재생하여 프로 선수나 과거의 스윙과 자세를 비교해 보세요.",
     f3Title: "타격 자동 클립",
     f3Desc: "AI가 임팩트 순간을 자동으로 감지하여 스윙 하이라이트를 매끄럽게 잘라냅니다.",
-    footerText: "© 2026 Golf90. All rights reserved."
+    footerText: "© 2026 Golf90. All rights reserved.",
+    readMore: "전체 기사 읽기 →"
   },
   ja: {
     home: "ホーム",
@@ -61,7 +64,8 @@ const translations = {
     f2Desc: "2つのスイングを並べて再生。プロのフォームや過去の練習記録と自分のスイングを比較できます。",
     f3Title: "スイング自動切り抜き",
     f3Desc: "AIがインパクトの瞬間を自動検知し、スイングのハイライトを正確に切り抜きます。",
-    footerText: "© 2026 Golf90. All rights reserved."
+    footerText: "© 2026 Golf90. All rights reserved.",
+    readMore: "全文を読む →"
   },
   fr: {
     home: "Accueil",
@@ -77,7 +81,8 @@ const translations = {
     f2Desc: "Lisez deux swings côte à côte pour vous comparer aux pros ou à vos sessions précédentes.",
     f3Title: "Découpage automatique",
     f3Desc: "L'IA détecte automatiquement l'impact et découpe vos meilleurs swings.",
-    footerText: "© 2026 Golf90. Tous droits réservés."
+    footerText: "© 2026 Golf90. Tous droits réservés.",
+    readMore: "Lire l'article complet →"
   },
   de: {
     home: "Startseite",
@@ -93,7 +98,8 @@ const translations = {
     f2Desc: "Spielen Sie zwei Schwünge nebeneinander ab, um sich mit Profis zu vergleichen.",
     f3Title: "Automatischer Zuschnitt",
     f3Desc: "KI erkennt den Moment des Aufpralls und schneidet Ihre Schwung-Highlights automatisch aus.",
-    footerText: "© 2026 Golf90. Alle Rechte vorbehalten."
+    footerText: "© 2026 Golf90. Alle Rechte vorbehalten.",
+    readMore: "Vollständigen Artikel lesen →"
   },
   es: {
     home: "Inicio",
@@ -109,7 +115,8 @@ const translations = {
     f2Desc: "Reproduce dos swings lado a lado para compararte con profesionales o prácticas pasadas.",
     f3Title: "Recorte automático",
     f3Desc: "La IA detecta automáticamente el momento del impacto y recorta tus swings.",
-    footerText: "© 2026 Golf90. Todos los derechos reservados."
+    footerText: "© 2026 Golf90. Todos los derechos reservados.",
+    readMore: "Leer artículo completo →"
   },
   it: {
     home: "Home",
@@ -125,31 +132,28 @@ const translations = {
     f2Desc: "Riproduci due swing fianco a fianco per confrontarti con i professionisti.",
     f3Title: "Ritaglio automatico",
     f3Desc: "L'IA rileva automaticamente l'impatto e ritaglia i momenti salienti del tuo swing.",
-    footerText: "© 2026 Golf90. Tutti i diritti riservati."
+    footerText: "© 2026 Golf90. Tutti i diritti riservati.",
+    readMore: "Leggi l'articolo completo →"
   }
 };
 
 function detectLanguage() {
   const userLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-  
-  // 严格匹配繁体中文，避免简体中文(zh-cn)被错误匹配
   if (["zh-tw", "zh-hk", "zh-mo", "zh-hant"].some(l => userLang.includes(l))) {
     return "zh-TW";
   }
-  
   if (userLang.startsWith("ko")) return "ko";
   if (userLang.startsWith("ja")) return "ja";
   if (userLang.startsWith("fr")) return "fr";
   if (userLang.startsWith("de")) return "de";
   if (userLang.startsWith("es")) return "es";
   if (userLang.startsWith("it")) return "it";
-
-  // 简体中文(zh-cn)以及其他未涵盖语言，全部回退到英语
   return "en";
 }
 
 const currentLang = detectLanguage();
 
+// ---------- 国际化文本替换 ----------
 document.addEventListener("DOMContentLoaded", () => {
   const dict = translations[currentLang] || translations.en;
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -158,4 +162,17 @@ document.addEventListener("DOMContentLoaded", () => {
       el.textContent = dict[key];
     }
   });
+
+  // ---------- 移动端菜单切换（请确保此段代码存在） ----------
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  if (toggleBtn && navMenu) {
+    toggleBtn.addEventListener('click', function(e) {
+      e.preventDefault(); // 防止任何默认行为
+      navMenu.classList.toggle('open');
+      console.log('Menu toggled'); // 调试日志，可在控制台查看
+    });
+  } else {
+    console.warn('Menu elements not found'); // 如果元素缺失会输出警告
+  }
 });
