@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article - Golf90</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo-container">
+          <span>Golf90</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" data-i18n="home">Home</a></li>
+          <li><a href="blog.html" class="active" data-i18n="learn">Golf Swing Learning</a></li>
+          <li><a href="privacy.html" data-i18n="privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <a href="https://apps.apple.com" target="_blank" class="btn-download" data-i18n="download">Download App</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="content-box">
+      <h1 id="article-title"></h1>
+      <hr style="border: 0; border-top: 1px solid var(--border-color); margin-bottom: 2rem;">
+      <div id="article-body"></div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p data-i18n="footerText">© 2026 Golf90. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="articles-data.js"></script>
+  <script src="i18n.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = urlParams.get('id') || "1";
+      const item = articles.find(a => a.id === articleId) || articles[0];
+      const langKey = (typeof currentLang !== "undefined" && item.title[currentLang]) ? currentLang : "en";
+
+      document.getElementById("article-title").textContent = item.title[langKey] || item.title["en"];
+      document.getElementById("article-body").innerHTML = item.content[langKey] || item.content["en"]; // 假设 content 也支持多语言，如果 content 只有一项则保持 item.content
+      document.title = `${item.title[langKey] || item.title["en"]} - Golf90`;
+    });
+  </script>
+</body>
+</html>
