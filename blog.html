@@ -44,7 +44,6 @@
     const container = document.getElementById("articles-list");
 
     articles.forEach(art => {
-      // 在循环内确定当前文章使用的语言键
       const langKey = (typeof currentLang !== "undefined" && art.title[currentLang]) ? currentLang : "en";
       
       const titleText = art.title[langKey] || art.title["en"];
