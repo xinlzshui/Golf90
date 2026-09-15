@@ -11,8 +11,8 @@ const translations = {
     f1Desc: "Capture your swing and get instant pose-estimation directly on your device without waiting for cloud uploads.",
     f2Title: "Dual Video Comparison",
     f2Desc: "Play two swings side-by-side. Compare your posture with professionals or your past practice sessions.",
-    f3Title: "Auto-Clipping of Hits",
-    f3Desc: "AI automatically detects the exact moment of impact and seamlessly clips the highlights of your swing.",
+    f3Title: "Local Video Analysis",
+    f3Desc: "Analyze your swing from a local video and get conclusions with improvement tips.",
     footerText: "© 2026 Golf90. All rights reserved.",
     readMore: "Read Full Article →"
   },
@@ -28,8 +28,8 @@ const translations = {
     f1Desc: "使用鏡頭捕捉揮桿，並在設備上即時獲取骨骼姿態診斷，無需上傳雲端。",
     f2Title: "雙影片對比分析",
     f2Desc: "並排播放兩段揮桿影片，輕鬆將您的動作與職業選手或歷史記錄進行對比。",
-    f3Title: "擊球自動剪輯",
-    f3Desc: "AI 自動偵測擊球瞬間，為您精準剪輯每一次揮桿的高光時刻。",
+    f3Title: "本機影片分析",
+    f3Desc: "對本機影片進行揮桿分析，給出分析結論和改進意見。",
     footerText: "© 2026 Golf90. 保留所有權利。",
     readMore: "閱讀全文 →"
   },
@@ -45,8 +45,8 @@ const translations = {
     f1Desc: "스윙을 촬영하고 클라우드 업로드 없이 기기에서 즉시 자세 추정 결과를 확인하세요.",
     f2Title: "듀얼 비디오 비교",
     f2Desc: "두 개의 스윙을 나란히 재생하여 프로 선수나 과거의 스윙과 자세를 비교해 보세요.",
-    f3Title: "타격 자동 클립",
-    f3Desc: "AI가 임팩트 순간을 자동으로 감지하여 스윙 하이라이트를 매끄럽게 잘라냅니다.",
+    f3Title: "로컬 영상 분석",
+    f3Desc: "로컬 영상으로 스윙을 분석하고 결과와 개선점을 제공합니다.",
     footerText: "© 2026 Golf90. All rights reserved.",
     readMore: "전체 기사 읽기 →"
   },
@@ -62,8 +62,8 @@ const translations = {
     f1Desc: "スイングを撮影し、クラウドにアップロードすることなく、デバイス上で即座に姿勢を推定します。",
     f2Title: "デュアルビデオ比較",
     f2Desc: "2つのスイングを並べて再生。プロのフォームや過去の練習記録と自分のスイングを比較できます。",
-    f3Title: "スイング自動切り抜き",
-    f3Desc: "AIがインパクトの瞬間を自動検知し、スイングのハイライトを正確に切り抜きます。",
+    f3Title: "ローカル動画分析",
+    f3Desc: "ローカル動画からスイングを分析し、結果と改善点を提示します。",
     footerText: "© 2026 Golf90. All rights reserved.",
     readMore: "全文を読む →"
   },
@@ -79,8 +79,8 @@ const translations = {
     f1Desc: "Filmez votre swing et obtenez une estimation de posture instantanée sur votre appareil.",
     f2Title: "Comparaison double vidéo",
     f2Desc: "Lisez deux swings côte à côte pour vous comparer aux pros ou à vos sessions précédentes.",
-    f3Title: "Découpage automatique",
-    f3Desc: "L'IA détecte automatiquement l'impact et découpe vos meilleurs swings.",
+    f3Title: "Analyse vidéo locale",
+    f3Desc: "Analysez votre swing à partir d'une vidéo locale et obtenez un bilan avec des conseils d'amélioration.",
     footerText: "© 2026 Golf90. Tous droits réservés.",
     readMore: "Lire l'article complet →"
   },
@@ -96,8 +96,8 @@ const translations = {
     f1Desc: "Nehmen Sie Ihren Schwung auf und erhalten Sie sofortige Haltungsanalysen auf dem Gerät.",
     f2Title: "Dual-Video-Vergleich",
     f2Desc: "Spielen Sie zwei Schwünge nebeneinander ab, um sich mit Profis zu vergleichen.",
-    f3Title: "Automatischer Zuschnitt",
-    f3Desc: "KI erkennt den Moment des Aufpralls und schneidet Ihre Schwung-Highlights automatisch aus.",
+    f3Title: "Lokale Videoanalyse",
+    f3Desc: "Analysiere deinen Schwung aus einem lokalen Video und erhalte Ergebnisse mit Verbesserungstipps.",
     footerText: "© 2026 Golf90. Alle Rechte vorbehalten.",
     readMore: "Vollständigen Artikel lesen →"
   },
@@ -113,8 +113,8 @@ const translations = {
     f1Desc: "Graba tu swing y obtén estimación de postura al instante sin subir nada a la nube.",
     f2Title: "Comparación de video dual",
     f2Desc: "Reproduce dos swings lado a lado para compararte con profesionales o prácticas pasadas.",
-    f3Title: "Recorte automático",
-    f3Desc: "La IA detecta automáticamente el momento del impacto y recorta tus swings.",
+    f3Title: "Análisis de vídeo local",
+    f3Desc: "Analiza tu swing desde un vídeo local y obtén conclusiones con consejos de mejora.",
     footerText: "© 2026 Golf90. Todos los derechos reservados.",
     readMore: "Leer artículo completo →"
   },
@@ -130,8 +130,8 @@ const translations = {
     f1Desc: "Registra il tuo swing e ottieni una stima della postura istantanea direttamente sul dispositivo.",
     f2Title: "Confronto doppio video",
     f2Desc: "Riproduci due swing fianco a fianco per confrontarti con i professionisti.",
-    f3Title: "Ritaglio automatico",
-    f3Desc: "L'IA rileva automaticamente l'impatto e ritaglia i momenti salienti del tuo swing.",
+    f3Title: "Analisi video locale",
+    f3Desc: "Analizza il tuo swing da un video locale e ottieni conclusioni con consigli di miglioramento.",
     footerText: "© 2026 Golf90. Tutti i diritti riservati.",
     readMore: "Leggi l'articolo completo →"
   }
